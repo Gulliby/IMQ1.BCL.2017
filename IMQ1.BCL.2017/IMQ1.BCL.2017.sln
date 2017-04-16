@@ -3,8 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileSorter", "FileSorter", "{6FD3FF4C-5D36-4B55-A4B3-3C00D5F0B911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMQ1.BCL.2017.FileSorter.Executor", "IMQ1.BCL.2017.FileSorter.Executor\IMQ1.BCL.2017.FileSorter.Executor.csproj", "{BA28A87A-0FBF-475F-A818-DEC39FB476E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMQ1.BCL.2017.FileSorter.Library", "IMQ1.BCL.2017.FileSorter.Library\IMQ1.BCL.2017.FileSorter.Library.csproj", "{03758A0C-1D82-4C22-98FB-5BECE3F72C44}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA28A87A-0FBF-475F-A818-DEC39FB476E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA28A87A-0FBF-475F-A818-DEC39FB476E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA28A87A-0FBF-475F-A818-DEC39FB476E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA28A87A-0FBF-475F-A818-DEC39FB476E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03758A0C-1D82-4C22-98FB-5BECE3F72C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03758A0C-1D82-4C22-98FB-5BECE3F72C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03758A0C-1D82-4C22-98FB-5BECE3F72C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03758A0C-1D82-4C22-98FB-5BECE3F72C44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA28A87A-0FBF-475F-A818-DEC39FB476E8} = {6FD3FF4C-5D36-4B55-A4B3-3C00D5F0B911}
+		{03758A0C-1D82-4C22-98FB-5BECE3F72C44} = {6FD3FF4C-5D36-4B55-A4B3-3C00D5F0B911}
 	EndGlobalSection
 EndGlobal
