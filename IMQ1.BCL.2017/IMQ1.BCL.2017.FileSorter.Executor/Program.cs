@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using IMQ1.BCL._2017.FileSorter.Library;
 using IMQ1.BCL._2017.FileSorter.Library.Entities;
 
@@ -13,6 +10,7 @@ namespace IMQ1.BCL._2017.FileSorter.Executor
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             var rules = new List<Rule>()
             {
                 new Rule
@@ -26,16 +24,9 @@ namespace IMQ1.BCL._2017.FileSorter.Executor
                     Destination = "mainFolder2"
                 }
             };
-            var engine = new Engine(rules, new List<string>{ @"D:\Test" });
+            var engine = new Engine(rules, new List<string>{ @"Test" });
             engine.StartWatch();
-            while (Console.Read() != 'q')
-            {
-            }
-        }
-
-        private static void OnCreated(object source, FileSystemEventArgs e)
-        {
-            Console.WriteLine("File: " + e.FullPath + " " + e.ChangeType);
+            Console.ReadKey();
         }
     }
 }

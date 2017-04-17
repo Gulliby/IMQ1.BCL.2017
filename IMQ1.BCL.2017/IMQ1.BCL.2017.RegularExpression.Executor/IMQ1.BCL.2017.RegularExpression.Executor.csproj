@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BA28A87A-0FBF-475F-A818-DEC39FB476E8}</ProjectGuid>
+    <ProjectGuid>{B2FF9D9C-05DF-4556-B0C8-15FBD52610B0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IMQ1.BCL._2017.FileSorter.Executor</RootNamespace>
-    <AssemblyName>IMQ1.BCL.2017.FileSorter.Executor</AssemblyName>
+    <RootNamespace>IMQ1.BCL._2017.RegularExpression.Executor</RootNamespace>
+    <AssemblyName>IMQ1.BCL.2017.RegularExpression.Executor</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,11 +51,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\IMQ1.BCL.2017.FileSorter.Library\IMQ1.BCL.2017.FileSorter.Library.csproj">
-      <Project>{03758a0c-1d82-4c22-98fb-5bece3f72c44}</Project>
-      <Name>IMQ1.BCL.2017.FileSorter.Library</Name>
+    <ProjectReference Include="..\IMQ1.BCL.2017.Infrastructure\IMQ1.BCL.2017.Infrastructure.csproj">
+      <Project>{4f7a414d-0fd3-42bf-ad36-ee2d0b1735be}</Project>
+      <Name>IMQ1.BCL.2017.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IMQ1.BCL.2017.RegularExpression.Library\IMQ1.BCL.2017.RegularExpression.Library.csproj">
+      <Project>{5eb5f031-b121-4b75-99d5-d0305b2dd183}</Project>
+      <Name>IMQ1.BCL.2017.RegularExpression.Library</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

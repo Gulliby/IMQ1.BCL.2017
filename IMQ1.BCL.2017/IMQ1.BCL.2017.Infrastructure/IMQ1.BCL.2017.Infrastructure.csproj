@@ -4,18 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BA28A87A-0FBF-475F-A818-DEC39FB476E8}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{4F7A414D-0FD3-42BF-AD36-EE2D0B1735BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IMQ1.BCL._2017.FileSorter.Executor</RootNamespace>
-    <AssemblyName>IMQ1.BCL.2017.FileSorter.Executor</AssemblyName>
+    <RootNamespace>IMQ1.BCL._2017.Infrastructure</RootNamespace>
+    <AssemblyName>IMQ1.BCL.2017.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -25,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -44,18 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Common\FileOrDirectoryExistsExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reader\ConsoleReader.cs" />
+    <Compile Include="Reader\Interface\IReader.cs" />
+    <Compile Include="Speakers\Interface\ISpeaker.cs" />
+    <Compile Include="Writer\ConsoleWriter.cs" />
+    <Compile Include="Writer\Interface\IWriter.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\IMQ1.BCL.2017.FileSorter.Library\IMQ1.BCL.2017.FileSorter.Library.csproj">
-      <Project>{03758a0c-1d82-4c22-98fb-5bece3f72c44}</Project>
-      <Name>IMQ1.BCL.2017.FileSorter.Library</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

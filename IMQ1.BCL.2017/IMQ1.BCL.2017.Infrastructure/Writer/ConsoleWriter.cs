@@ -1,7 +1,7 @@
-﻿using System;
-using IMQ1.BCL._2017.FileSorter.Library.Writer.Interface;
+﻿using IMQ1.BCL._2017.Infrastructure.Writer.Interface;
+using System;
 
-namespace IMQ1.BCL._2017.FileSorter.Library.Writer
+namespace IMQ1.BCL._2017.Infrastructure.Writer
 {
     public class ConsoleWriter : IWriter
     {

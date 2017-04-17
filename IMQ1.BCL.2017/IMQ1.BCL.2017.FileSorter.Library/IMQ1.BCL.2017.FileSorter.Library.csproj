@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IMQ1.BCL._2017.FileSorter.Library</RootNamespace>
     <AssemblyName>IMQ1.BCL.2017.FileSorter.Library</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,8 +45,12 @@
     <Compile Include="Entities\Interface\IRule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Rule.cs" />
-    <Compile Include="Writer\ConsoleWriter.cs" />
-    <Compile Include="Writer\Interface\IWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IMQ1.BCL.2017.Infrastructure\IMQ1.BCL.2017.Infrastructure.csproj">
+      <Project>{4f7a414d-0fd3-42bf-ad36-ee2d0b1735be}</Project>
+      <Name>IMQ1.BCL.2017.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
